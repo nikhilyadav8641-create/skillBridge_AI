@@ -1,0 +1,48 @@
+.job-role-selector {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.job-role-label {
+  display: block;
+  margin-bottom: 9px;
+  color: #1e293b;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.job-role-select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #1e293b;
+  font-size: 14px;
+  outline: none;
+}
+
+.job-role-select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px #dbeafe;
+}
+
+.job-role-help {
+  margin: 8px 0 0;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.job-role-selector {
+  width: 100%;
+}
+
+.job-role-selector .form-control {
+  min-height: 44px;
+  border-radius: 8px;
+}
+
+.job-role-selector .form-label {
+  font-weight: 600;
+  margin-bottom: 8px;
+}

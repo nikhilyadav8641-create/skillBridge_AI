@@ -1,0 +1,471 @@
+.register-page {
+  --register-blue: #1765f5;
+  --register-dark: #14264d;
+  --register-muted: #71819c;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: var(--register-dark);
+  background: #fff;
+}
+
+.register-page * {
+  box-sizing: border-box;
+}
+
+.register-page a {
+  text-decoration: none;
+}
+
+.register-header {
+  min-height: 76px;
+  padding: 14px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eaf0fa;
+}
+
+.register-brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--register-dark);
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.register-brand svg,
+.register-brand strong {
+  color: var(--register-blue);
+}
+
+.register-back-link {
+  color: #60718d;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.register-back-link:hover,
+.register-login-text a:hover {
+  color: #084bc9;
+}
+
+.register-main {
+  width: 100%;
+  max-width: 1400px;
+  flex: 1;
+  margin: auto;
+  padding: 42px 6%;
+  display: grid;
+  grid-template-columns: 1fr 0.88fr;
+  align-items: center;
+  gap: 7%;
+}
+
+.register-intro {
+  position: relative;
+  padding: 20px 0;
+}
+
+.register-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 13px;
+  border-radius: 30px;
+  color: #1765f5;
+  background: #eaf1ff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.register-intro h1 {
+  margin: 23px 0 16px;
+  font-size: clamp(39px, 4vw, 56px);
+  font-weight: 850;
+  line-height: 1.13;
+  letter-spacing: -1.7px;
+}
+
+.register-intro h1 span {
+  display: block;
+  color: var(--register-blue);
+}
+
+.register-intro-text {
+  max-width: 470px;
+  color: var(--register-muted);
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.register-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  margin-top: 30px;
+}
+
+.register-benefits > div {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.register-benefit-icon {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  border-radius: 13px;
+}
+
+.register-benefit-icon.blue {
+  color: #1765f5;
+  background: #eaf1ff;
+}
+
+.register-benefit-icon.purple {
+  color: #7c3aed;
+  background: #f1eaff;
+}
+
+.register-benefit-icon.green {
+  color: #059669;
+  background: #e0f8ed;
+}
+
+.register-benefits > div > span:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.register-benefits strong {
+  font-size: 13px;
+}
+
+.register-benefits small {
+  color: var(--register-muted);
+  font-size: 12px;
+}
+
+.register-decoration {
+  position: absolute;
+  right: 5%;
+  bottom: -5px;
+  width: 145px;
+  height: 125px;
+  display: grid;
+  place-items: center;
+  color: #1765f5;
+  opacity: 0.14;
+  transform: rotate(-9deg);
+  pointer-events: none;
+}
+
+.register-decoration-star {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #8b5cf6;
+  font-size: 36px;
+}
+
+.register-form-section {
+  display: flex;
+  justify-content: center;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 450px;
+  padding: 35px;
+  border: 1px solid #e7edf8;
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 24px 65px rgba(25, 59, 115, 0.09);
+}
+
+.register-mobile-logo {
+  display: none;
+  color: var(--register-blue);
+}
+
+.register-form-eyebrow {
+  color: var(--register-blue);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.7px;
+}
+
+.register-card h2 {
+  margin: 12px 0 9px;
+  font-size: 29px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+}
+
+.register-form-subtitle {
+  margin: 0 0 25px;
+  color: var(--register-muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.register-field {
+  margin-bottom: 19px;
+}
+
+.register-field label {
+  display: block;
+  margin-bottom: 8px;
+  color: #293d60;
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.register-input-wrap {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 0 13px;
+  border: 1px solid #dfe7f3;
+  border-radius: 10px;
+  background: #fbfcff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.register-input-wrap:focus-within {
+  border-color: #528cff;
+  box-shadow: 0 0 0 4px #1765f512;
+  background: #fff;
+}
+
+.register-input-wrap > svg {
+  flex-shrink: 0;
+  color: #91a1bb;
+}
+
+.register-input-wrap input {
+  width: 100%;
+  min-width: 0;
+  height: 48px;
+  padding: 0;
+  border: 0;
+  outline: none;
+  color: #1c3156;
+  background: transparent;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.register-input-wrap input::placeholder {
+  color: #a1aec2;
+}
+
+.register-password-toggle {
+  display: grid;
+  place-items: center;
+  padding: 4px;
+  border: 0;
+  color: #8392ab;
+  background: transparent;
+  cursor: pointer;
+}
+
+.register-field-hint {
+  display: block;
+  margin-top: 7px;
+  color: #8997ac;
+  font-size: 10px;
+}
+
+.register-submit {
+  width: 100%;
+  min-height: 51px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 0;
+  border-radius: 11px;
+  color: #fff;
+  background: linear-gradient(120deg, #2875ff, #0755e7);
+  box-shadow: 0 9px 20px #1765f529;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 750;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.register-submit:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 13px 25px #1765f53d;
+}
+
+.register-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.register-error {
+  margin: 0 0 14px;
+  padding: 11px 12px;
+  border: 1px solid #fecaca;
+  border-radius: 9px;
+  color: #b91c1c;
+  background: #fef2f2;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.register-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 24px 0 20px;
+  color: #9aa8bc;
+  font-size: 9px;
+  font-weight: 750;
+  letter-spacing: 1px;
+}
+
+.register-divider::before,
+.register-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e9eef6;
+}
+
+.register-login-text {
+  margin: 0;
+  text-align: center;
+  color: #71819a;
+  font-size: 12px;
+}
+
+.register-login-text a {
+  color: var(--register-blue);
+  font-weight: 750;
+}
+
+.register-security-note {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  margin: 21px 0 0;
+  color: #8392a9;
+  font-size: 10px;
+}
+
+.register-security-note svg {
+  color: #0f9f6e;
+  flex-shrink: 0;
+}
+
+.register-footer {
+  min-height: 58px;
+  padding: 15px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  border-top: 1px solid #eaf0fa;
+  color: #8492a9;
+  font-size: 11px;
+}
+
+@media (max-width: 900px) {
+  .register-main {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-top: 30px;
+    padding-bottom: 35px;
+  }
+
+  .register-intro {
+    max-width: 570px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .register-intro-text {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .register-benefits {
+    max-width: 380px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+  }
+
+  .register-decoration {
+    display: none;
+  }
+
+  .register-card {
+    max-width: 490px;
+  }
+}
+
+@media (max-width: 520px) {
+  .register-header {
+    min-height: 65px;
+    padding: 12px 18px;
+  }
+
+  .register-brand {
+    font-size: 19px;
+  }
+
+  .register-brand svg {
+    width: 29px;
+  }
+
+  .register-back-link {
+    font-size: 12px;
+  }
+
+  .register-main {
+    padding: 25px 17px;
+  }
+
+  .register-intro {
+    padding: 8px 0;
+  }
+
+  .register-intro h1 {
+    font-size: 38px;
+    letter-spacing: -1px;
+  }
+
+  .register-intro-text {
+    font-size: 14px;
+  }
+
+  .register-card {
+    padding: 25px 20px;
+    border-radius: 17px;
+  }
+
+  .register-card h2 {
+    font-size: 25px;
+  }
+
+  .register-footer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
